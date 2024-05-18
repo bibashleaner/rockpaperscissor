@@ -1,0 +1,45 @@
+:root{
+    --clr-grey: #c1c0c0;
+    --clr-btnred: #ce242d;
+    --clr-textred: #992525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-grey);
+}
+
+/* .............................heading........................ */
+
+.heading{
+    margin: 50px 0px 0px 19rem;
+    font-size: 50px;
+}
+
+.heading h2{
+    margin-left: 135px;
+}
+
+/* ...........................heading end.................... */
+
+/* ...........................button......................... */
+
+.play{
+    text-decoration: none;
+    background-color: var(--clr-btnred);
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    margin: 5rem 42rem 0rem 42rem;
+    border-radius: 13px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+/* ...........................button end...................... */
