@@ -1,0 +1,30 @@
+.select{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.select #paper{
+     background-color: var(--clr-btnred);
+     font-size: 40px;
+     color: white;
+     padding: 25px 120px 25px 120px;
+     border-radius: 13px;
+}
+
+.select #rock{
+    background-color: var(--clr-btnred);
+     font-size: 40px;
+     color: white;
+     padding: 25px 120px 25px 120px;
+     border-radius: 13px;
+}
+
+.select #scissor{
+    background-color: var(--clr-btnred);
+     font-size: 40px;
+     color: white;
+     padding: 25px 90px 25px 90px;
+     border-radius: 13px;
+}

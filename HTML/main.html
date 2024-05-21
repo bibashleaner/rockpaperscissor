@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/button.css">
     <title>Rock Paper Scissor</title>
 </head>
 <body>
@@ -11,5 +12,16 @@
         <p class="fscore">Player Score :</p>
         <p class="lscore">Computer Score :</p>
     </div>
+    <div class="img">
+        <img src="" id="image" alt="image">
+    </div>
+    <p class="text">Choose your move, Rock Paper or Scissor?</p>
+     <div class="select">
+        <button id="paper" onclick="getHumanchoise()"><strong>Paper</strong></button>
+        <button id="rock" onclick="getHumanchoise()"><strong>Rock</strong></button>
+        <button id="scissor" onclick="getHumanchoise()"><strong>Scissor</strong></button>
+     </div>
+
+    <script src="/script/game.js"></script>
 </body>
-</html>
+</html>~~
