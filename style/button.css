@@ -1,8 +1,8 @@
 .select{
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    margin-top: 60px;
+    align-items: baseline;
+    margin-top: 25px;
 }
 
 .select #paper{
@@ -11,6 +11,8 @@
      color: white;
      padding: 25px 120px 25px 120px;
      border-radius: 13px;
+     margin-right: 20px;
+     cursor: pointer;
 }
 
 .select #rock{
@@ -19,6 +21,8 @@
      color: white;
      padding: 25px 120px 25px 120px;
      border-radius: 13px;
+     margin-right: 20px;
+     cursor: pointer;
 }
 
 .select #scissor{
@@ -27,4 +31,5 @@
      color: white;
      padding: 25px 90px 25px 90px;
      border-radius: 13px;
+     cursor: pointer;
 }

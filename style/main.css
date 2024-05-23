@@ -21,11 +21,25 @@ body{
     margin-top: 20px;
 }
 
+.result{
+    display: flex;
+    justify-content: center;
+    color: var(--clr-textred);
+    font-size: 50px;
+    transform: translateY(40px);
+}
+
 .img{
     mix-blend-mode: multiply;
     background-color: transparent;
     height: 2px;
     width: 2px;
+}
+
+.img #image{
+    height: 22rem;
+    width: 22rem;
+    margin: 6rem 0rem 0rem 38rem;
 }
 
 img .paper{
@@ -36,6 +50,8 @@ img .paper{
 .text{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     font-size: 30px;
+    margin-top: 29rem;
 }
 
