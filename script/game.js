@@ -12,17 +12,25 @@ function getComputerChoise(){
 
 // determing the winner
 
-function playRound(computerChoise, humanChoise){
+function playRound(computerChoise, humanChoise, result){
     console.log(computerChoise);
+    const rsltDive = document.querySelector('.result');
    if(computerChoise === humanChoise){
     round++;
-    alert("It's a tie.");
+    // alert("It's a tie.");
    }
    else if((computerChoise === 'rock' && humanChoise === 'paper') || (computerChoise === 'paper' && humanChoise === 'scissor') || (computerChoise === 'scissor' && humanChoise === 'rock')){
+    if(round==5){
+        restart();
+    }
     playerScore++;
     round++;
    }
    else if((computerChoise === 'rock' && humanChoise === 'scissor') || (computerChoise === 'paper' || humanChoise === 'rock') || (computerChoise === 'scissor' && humanChoise === 'paper')){
+    if(round==5){
+        restart();
+        
+    } 
     computerScore++;
     round++;
    }
@@ -44,26 +52,23 @@ function selectionWinner(result){
     const resultDiv = document.querySelector('.result');
     if((round  == 5) && (computerScore > playerScore)){
         resultDiv.innerText = 'YOU LOSE !';
-        
-        // return restart();
     }
     else if((round == 5) && (computerScore < playerScore)){
         resultDiv.innerText = 'YOU WON !';
-        
-        // return restart();
+    }
+    else{
+        resultDiv.innerText = '';
     }
 }
 
 // To reset the game
 
-// function restart(){
-//     if(round > 5){
-//         selectionWinner();
-//         computerScore = 0;
-//         playerScore = 0;
-//         round = 0;
-//     }
-// }
+function restart(){
+        computerScore = 0;
+        playerScore = 0;
+        round = 0; 
+        // rsltDive.innerText = '';
+}
 
 // handle button click
 
@@ -72,7 +77,6 @@ function handleButtonClick(humanChoise){
     playRound(getChoise, humanChoise);
     determineScore();
     selectionWinner();
-    // restart();
 }
 
 
