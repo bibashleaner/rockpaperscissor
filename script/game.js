@@ -12,9 +12,8 @@ function getComputerChoise(){
 
 // determing the winner
 
-function playRound(computerChoise, humanChoise, result){
+function playRound(computerChoise, humanChoise){
     console.log(computerChoise);
-    const rsltDive = document.querySelector('.result');
    if(computerChoise === humanChoise){
     round++;
     // alert("It's a tie.");
@@ -67,7 +66,6 @@ function restart(){
         computerScore = 0;
         playerScore = 0;
         round = 0; 
-        // rsltDive.innerText = '';
 }
 
 // handle button click
@@ -78,7 +76,6 @@ function handleButtonClick(humanChoise){
     determineScore();
     selectionWinner();
 }
-
 
 // Time interval to swap the image
 
